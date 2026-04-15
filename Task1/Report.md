@@ -56,7 +56,7 @@ The assessment was conducted using basic manual testing techniques, including:
 
 ## 6. Evidence (Screenshot)
 
-![Website Screenshot](screenshot1.jpg)
+![Website Screenshot](Task1/Screenshot1.jpg)
 
 ---
 
