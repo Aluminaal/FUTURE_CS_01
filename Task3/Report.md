@@ -1,57 +1,91 @@
-# Password Security & Best Practices Report
+# Vulnerability Assessment Report
 
-## 1. Introduction
-Passwords are the first line of defense in protecting user accounts and sensitive information. Weak passwords can easily be guessed or cracked by attackers.
-
----
-
-## 2. Objective
-The objective of this task is to:
-- Understand password security risks
-- Identify weak and strong passwords
-- Learn best practices for creating secure passwords
+## 1. Objective
+The objective of this task is to perform a basic security assessment on a vulnerable web application and identify potential security weaknesses. The goal is to understand how vulnerabilities can be discovered and how they impact system security.
 
 ---
 
-## 3. Weak vs Strong Passwords
-
-### Weak Password Examples:
-- 123456
-- password
-- alia123
-
-### Strong Password Examples:
-- A!ia#2026Secure
-- My$trongP@ss1
-- C0mplex&Safe!
+## 2. Target Application
+OWASP Juice Shop  
+https://juice-shop.herokuapp.com
 
 ---
 
-## 4. Common Password Attacks
-
-### Brute Force Attack
-Trying many password combinations until the correct one is found.
-
-### Dictionary Attack
-Using common words to guess passwords.
+## 3. Tools Used
+- Nmap (Network Scanning)
+- OWASP ZAP (Web Application Security Scanner)
+- Mozilla Firefox (Manual Testing)
 
 ---
 
-## 5. Best Practices for Strong Passwords
-- Use at least 8–12 characters
-- Include uppercase and lowercase letters
-- Include numbers and symbols
-- Avoid personal information
-- Do not reuse passwords
+## 4. Methodology
+
+### Step 1: Reconnaissance
+- Accessed the application using a web browser
+- Observed application structure, login system, and input fields
+
+### Step 2: Network Scanning (Nmap)
+- Performed a basic scan to identify open ports and services
+- Verified that the web application is accessible over HTTP/HTTPS
+
+### Step 3: Automated Scanning (OWASP ZAP)
+- Used ZAP to scan the application for common vulnerabilities
+- Identified alerts related to input validation and security misconfigurations
+
+### Step 4: Manual Testing
+- Tested input fields manually for unusual behavior
+- Checked login and search functionalities for possible weaknesses
 
 ---
 
-## 6. Additional Security Measures
-- Enable two-factor authentication (2FA)
-- Use password managers
-- Change passwords regularly
+## 5. Vulnerabilities Identified
+
+### 1. Cross-Site Scripting (XSS)
+- Risk Level: Medium
+- Description:
+  Input fields may allow malicious scripts to be injected and executed in the browser.
+- Impact:
+  Attackers can steal session data or perform actions on behalf of users.
+- Recommendation:
+  Implement input validation and output encoding.
+
+---
+
+### 2. Security Misconfiguration
+- Risk Level: Medium
+- Description:
+  The application exposes certain unnecessary information and lacks strict security configurations.
+- Impact:
+  Attackers can gather information about the system and exploit weaknesses.
+- Recommendation:
+  Disable unnecessary features and configure secure headers.
+
+---
+
+### 3. Weak Authentication Mechanism
+- Risk Level: High
+- Description:
+  The authentication system may allow weak passwords or improper validation.
+- Impact:
+  Unauthorized users can gain access to accounts.
+- Recommendation:
+  Enforce strong password policies and proper authentication controls.
+
+---
+
+## 6. Evidence (Screenshots)
+- Nmap scan results
+- OWASP ZAP scan alerts
+- Browser testing screenshots
 
 ---
 
 ## 7. Conclusion
-Strong passwords are essential for protecting digital accounts. By following best practices, users can significantly reduce the risk of unauthorized access.
+The OWASP Juice Shop application contains multiple vulnerabilities intentionally designed for educational purposes. This assessment provided practical experience in identifying common web security issues using both automated and manual testing techniques.
+
+---
+
+## 8. Learning Outcome
+- Gained hands-on experience with Nmap and OWASP ZAP
+- Understood common web vulnerabilities like XSS and authentication flaws
+- Learned how to analyze and document security findings professionally
