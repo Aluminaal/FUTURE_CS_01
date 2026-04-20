@@ -69,3 +69,10 @@ Adds an extra layer of protection beyond passwords.
 
 ## 🚀 Outcome
 This task enhanced my understanding of cybersecurity awareness and improved my ability to identify and prevent common cyber threats.
+---
+
+## 🌱 Learning Reflection
+
+This internship provided me with a strong foundation in cybersecurity concepts and practical skills. It helped me understand real-world threats such as phishing attacks, vulnerabilities, and insecure practices.
+
+Through these tasks, I developed the ability to analyze security issues and think critically about how to prevent them. This experience has motivated me to continue learning and explore cybersecurity at a deeper level, including advanced topics and hands-on security practices.
