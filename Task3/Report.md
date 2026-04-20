@@ -94,3 +94,10 @@ Cybersecurity awareness is essential for protecting digital assets and personal 
 
 ## 11. Learning Outcome
 This task improved my understanding of cybersecurity concepts and enhanced my ability to identify threats and apply preventive measures in real-world scenarios.
+## 12. Personal Reflection 🌱
+
+This internship has played an important role in strengthening my foundation in cybersecurity. Through the completion of these tasks, I gained a clear understanding of common cyber threats, security tools, and best practices used to protect systems and data.
+
+Working on vulnerability assessment, phishing detection, and security awareness has helped me move from basic theoretical knowledge to practical understanding. I am now more confident in identifying security risks and applying appropriate mitigation strategies.
+
+This experience has motivated me to explore cybersecurity in greater depth, improve my technical skills, and continue learning advanced concepts in areas such as network security, ethical hacking, and system protection.
