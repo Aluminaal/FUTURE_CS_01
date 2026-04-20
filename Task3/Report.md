@@ -1,91 +1,96 @@
-# Vulnerability Assessment Report
+# 🔐 Cyber Security Awareness Report
 
-## 1. Objective
-The objective of this task is to perform a basic security assessment on a vulnerable web application and identify potential security weaknesses. The goal is to understand how vulnerabilities can be discovered and how they impact system security.
-
----
-
-## 2. Target Application
-OWASP Juice Shop  
-https://juice-shop.herokuapp.com
+## 1. Introduction
+In today’s digital world, cybersecurity has become a critical concern for individuals and organizations. With the increasing use of the internet, users are exposed to various cyber threats such as phishing, malware, and social engineering attacks. This report focuses on raising awareness about these threats and promoting safe online practices.
 
 ---
 
-## 3. Tools Used
-- Nmap (Network Scanning)
-- OWASP ZAP (Web Application Security Scanner)
-- Mozilla Firefox (Manual Testing)
+## 2. Objective
+The objective of this task is to:
+- Understand common cybersecurity threats  
+- Educate users about safe online behavior  
+- Identify risks associated with poor security practices  
+- Provide effective prevention strategies  
 
 ---
 
-## 4. Methodology
-
-### Step 1: Reconnaissance
-- Accessed the application using a web browser
-- Observed application structure, login system, and input fields
-
-### Step 2: Network Scanning (Nmap)
-- Performed a basic scan to identify open ports and services
-- Verified that the web application is accessible over HTTP/HTTPS
-
-### Step 3: Automated Scanning (OWASP ZAP)
-- Used ZAP to scan the application for common vulnerabilities
-- Identified alerts related to input validation and security misconfigurations
-
-### Step 4: Manual Testing
-- Tested input fields manually for unusual behavior
-- Checked login and search functionalities for possible weaknesses
+## 3. Overview of Cyber Security
+Cybersecurity refers to the practice of protecting systems, networks, and data from digital attacks. It ensures the confidentiality, integrity, and availability of information.
 
 ---
 
-## 5. Vulnerabilities Identified
+## 4. Common Cyber Threats
 
-### 1. Cross-Site Scripting (XSS)
-- Risk Level: Medium
-- Description:
-  Input fields may allow malicious scripts to be injected and executed in the browser.
-- Impact:
-  Attackers can steal session data or perform actions on behalf of users.
-- Recommendation:
-  Implement input validation and output encoding.
+### 🎣 Phishing
+Phishing is a cyber attack where attackers impersonate legitimate organizations to trick users into revealing sensitive information such as passwords or financial data.
 
----
+### 🦠 Malware
+Malware refers to malicious software designed to damage or gain unauthorized access to systems. Examples include viruses, worms, and spyware.
 
-### 2. Security Misconfiguration
-- Risk Level: Medium
-- Description:
-  The application exposes certain unnecessary information and lacks strict security configurations.
-- Impact:
-  Attackers can gather information about the system and exploit weaknesses.
-- Recommendation:
-  Disable unnecessary features and configure secure headers.
+### 🔒 Ransomware
+Ransomware locks or encrypts user data and demands payment for its release.
+
+### 🧠 Social Engineering
+This involves manipulating users into performing actions or revealing confidential information.
 
 ---
 
-### 3. Weak Authentication Mechanism
-- Risk Level: High
-- Description:
-  The authentication system may allow weak passwords or improper validation.
-- Impact:
-  Unauthorized users can gain access to accounts.
-- Recommendation:
-  Enforce strong password policies and proper authentication controls.
+## 5. Password Security 🔑
+
+Weak passwords are one of the main causes of security breaches. Attackers use techniques such as brute force and dictionary attacks to guess passwords.
+
+### ✔ Strong Password Practices:
+- Use at least 8–12 characters  
+- Include uppercase, lowercase, numbers, and symbols  
+- Avoid using personal information  
+- Do not reuse passwords  
 
 ---
 
-## 6. Evidence (Screenshots)
-- Nmap scan results
-- OWASP ZAP scan alerts
-- Browser testing screenshots
+## 6. Two-Factor Authentication (2FA) 🔐
+Two-Factor Authentication adds an extra layer of security by requiring a second form of verification, such as a code sent to a mobile device.
+
+### Benefits:
+- Enhances account security  
+- Prevents unauthorized access  
+- Reduces risk even if password is compromised  
 
 ---
 
-## 7. Conclusion
-The OWASP Juice Shop application contains multiple vulnerabilities intentionally designed for educational purposes. This assessment provided practical experience in identifying common web security issues using both automated and manual testing techniques.
+## 7. Safe Browsing Practices 🌐
+- Always check for HTTPS in URLs  
+- Avoid visiting suspicious websites  
+- Do not download files from untrusted sources  
+- Keep browsers and software updated  
 
 ---
 
-## 8. Learning Outcome
-- Gained hands-on experience with Nmap and OWASP ZAP
-- Understood common web vulnerabilities like XSS and authentication flaws
-- Learned how to analyze and document security findings professionally
+## 8. Email Security 📧
+- Do not click unknown links  
+- Verify sender email addresses  
+- Avoid opening suspicious attachments  
+- Be cautious of urgent or threatening messages  
+
+---
+
+## 9. Do’s and Don’ts ✔❌
+
+### ✔ Do:
+- Use strong passwords  
+- Enable 2FA  
+- Update software regularly  
+
+### ❌ Don’t:
+- Share sensitive information  
+- Click unknown links  
+- Use unsecured public Wi-Fi  
+
+---
+
+## 10. Conclusion
+Cybersecurity awareness is essential for protecting digital assets and personal information. By understanding common threats and following best practices, users can significantly reduce the risk of cyber attacks.
+
+---
+
+## 11. Learning Outcome
+This task improved my understanding of cybersecurity concepts and enhanced my ability to identify threats and apply preventive measures in real-world scenarios.
