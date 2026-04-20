@@ -1,94 +1,165 @@
-# Vulnerability Assessment Report
+🔐 Cyber Security Internship – Future Interns (2026)
 
-## 1. Objective
-The objective of this task is to perform a basic security assessment on a vulnerable web application and identify potential security weaknesses. The goal is to understand how vulnerabilities can be discovered and how they impact system security.
-
----
-
-## 2. Target Application
-OWASP Juice Shop  
-https://juice-shop.herokuapp.com
+This repository contains all tasks completed as part of the Cyber Security Internship program by Future Interns.
 
 ---
 
-## 3. Tools Used
-- Nmap (Network Scanning)
-- OWASP ZAP (Web Application Security Scanner)
-- Mozilla Firefox (Manual Testing)
+👩‍💻 Intern Details
+
+- Name: Alia Abdulkadir
+- Role: Cyber Security Intern
+- Program: Future Interns 2026
 
 ---
 
-## 4. Methodology
+📂 Repository Structure
 
-### Step 1: Reconnaissance
-- Accessed the application using a web browser
-- Observed application structure, login system, and input fields
-
-### Step 2: Network Scanning (Nmap)
-- Performed a basic scan to identify open ports and services
-- Verified that the web application is accessible over HTTP/HTTPS
-
-### Step 3: Automated Scanning (OWASP ZAP)
-- Used ZAP to scan the application for common vulnerabilities
-- Identified alerts related to input validation and security misconfigurations
-
-### Step 4: Manual Testing
-- Tested input fields manually for unusual behavior
-- Checked login and search functionalities for possible weaknesses
+FUTURE_CS_01/
+│
+├── README.md
+├── Task1/
+├── Task2/
+├── Task3/
+└── Certificates/
 
 ---
 
-## 5. Vulnerabilities Identified
+🧪 Task 1: Vulnerability Assessment
 
-### 1. Cross-Site Scripting (XSS)
+🎯 Objective
+
+To perform a basic security assessment on a vulnerable web application and identify potential vulnerabilities.
+
+🌐 Target Application
+
+OWASP Juice Shop (Intentionally vulnerable web application used for security training)
+
+🛠️ Tools Used
+
+- Nmap (Network scanning)
+- OWASP ZAP (Vulnerability scanning)
+- Mozilla Firefox (Manual testing)
+
+🔍 Methodology
+
+- Reconnaissance: Explored application pages and inputs
+- Network Scanning: Identified services using Nmap
+- Automated Scanning: Performed scan using OWASP ZAP
+- Manual Testing: Tested inputs and authentication
+
+⚠️ Key Vulnerabilities Identified
+
+1. Missing Content Security Policy (CSP)
+
 - Risk Level: Medium
-- Description:
-  Input fields may allow malicious scripts to be injected and executed in the browser.
-- Impact:
-  Attackers can steal session data or perform actions on behalf of users.
-- Recommendation:
-  Implement input validation and output encoding.
+- Description: The application does not implement a CSP header, which helps prevent attacks like Cross-Site Scripting (XSS).
+- Impact: Attackers may inject malicious scripts into the application.
+- Recommendation: Configure Content-Security-Policy headers.
 
----
+2. Security Misconfiguration
 
-### 2. Security Misconfiguration
 - Risk Level: Medium
-- Description:
-  The application exposes certain unnecessary information and lacks strict security configurations.
-- Impact:
-  Attackers can gather information about the system and exploit weaknesses.
-- Recommendation:
-  Disable unnecessary features and configure secure headers.
+- Description: Some security headers and configurations are missing.
+- Impact: Attackers can gather system information and exploit weaknesses.
+- Recommendation: Apply secure configuration practices and disable unnecessary features.
 
----
+3. Weak Authentication
 
-### 3. Weak Authentication Mechanism
 - Risk Level: High
-- Description:
-  The authentication system may allow weak passwords or improper validation.
-- Impact:
-  Unauthorized users can gain access to accounts.
-- Recommendation:
-  Enforce strong password policies and proper authentication controls.
+- Description: Authentication mechanisms may allow weak credentials.
+- Impact: Unauthorized access to user accounts.
+- Recommendation: Enforce strong password policies and secure authentication.
+
+📄 Deliverables
+
+- Vulnerability Assessment Report (PDF)
+- Screenshots (Nmap & OWASP ZAP Evidence)
 
 ---
 
-## 6. Evidence (Screenshots)
-- Nmap scan results
-- OWASP ZAP scan alerts
-- Browser testing screenshots
+🎣 Task 2: Phishing Email Analysis
+
+🎯 Objective
+
+To analyze phishing emails and identify malicious indicators.
+
+🔍 Analysis Includes
+
+- Identification of phishing indicators
+- Email risk classification (Safe / Suspicious / Phishing)
+- Explanation of attack techniques
+- Prevention tips for users
+
+⚠️ Common Indicators Identified
+
+- Suspicious sender address
+- Urgent or threatening language
+- Fake links or mismatched URLs
+- Requests for sensitive information
+
+🛡️ Prevention Tips
+
+- Do not click unknown links
+- Verify sender identity
+- Avoid sharing personal information
+- Use email filtering systems
+
+📄 Deliverables
+
+- Phishing Analysis Report (PDF)
 
 ---
 
-## 7. Conclusion
-The OWASP Juice Shop application contains multiple vulnerabilities intentionally designed for educational purposes. This assessment provided practical experience in identifying common web security issues using both automated and manual testing techniques.
+🛡️ Task 3: Security Awareness
+
+🎯 Objective
+
+To promote cybersecurity awareness and safe online practices.
+
+🔍 Topics Covered
+
+- Cyber threats (Phishing, Malware, Social Engineering)
+- Password security
+- Safe browsing practices
+- Email security awareness
+
+💡 Best Practices
+
+- Use strong and unique passwords
+- Enable two-factor authentication (2FA)
+- Avoid suspicious downloads
+- Keep systems updated
+
+📄 Deliverables
+
+- Security Awareness Presentation (PDF)
 
 ---
 
-## 8. Learning Outcome
-- Gained hands-on experience with Nmap and OWASP ZAP
-- Understood common web vulnerabilities like XSS and authentication flaws
-- Learned how to analyze and document security findings professionally
+📸 Evidence
+
+Screenshots from:
+
+- Nmap scans
+- OWASP ZAP vulnerability alerts
+- Manual testing
+
+---
+
+📌 Notes
+
+- All tasks were performed for educational purposes only
+- OWASP Juice Shop is a safe, intentionally vulnerable platform
+- No real systems were harmed during testing
+
+---
+
+🔗 Submission
+
+This repository is submitted as part of the Cyber Security Internship Program by Future Interns.
+
+---
+
 
 
 
